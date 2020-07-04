@@ -433,32 +433,42 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form>
-          <h4>Оставьте свои данные, мы вам перезвоним</h4>
-          <label for="">
-            <input type="text" />
-            <svg class="plane" width="18" height="18">
+        <h4 class="form-title">Оставьте свои данные, мы вам перезвоним</h4>
+        <form class="js-form">
+          <label for="person" class="form-field"
+            >Имя
+            <input class="form-input" type="text" name="person" />
+            <svg class="form-icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#person"></use>
             </svg>
           </label>
-          <label for="">
-            <input type="text" />
-            <svg class="plane" width="18" height="18">
+          <label for="phoneblack" class="form-field"
+            >Телефон
+            <input class="form-input" type="text" name="phoneblack" />
+            <svg class="form-icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#phoneblack"></use>
             </svg>
           </label>
-          <label for="">
-            <input type="text" />
-            <svg class="plane" width="18" height="18">
+          <label for="emailblack" class="form-field"
+            >Почта
+            <input class="form-input" type="text" name="emailblack" />
+            <svg class="form-icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#emailblack"></use>
             </svg>
           </label>
-          <label for="">
-            <input type="text" />
+
+          <label for=""
+            >Комментарий
+            <input class="form-input" type="text" />
           </label>
           <label for="">
-            <input type="text" />
-            <svg class="plane" width="18" height="18">
+            <input class="checkbox" type="text" />
+            <span
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a>
+            </span>
+
+            <svg class="form-icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#check"></use>
             </svg>
           </label>
@@ -466,7 +476,7 @@
         </form>
         <button data-modal-close>
           закрыть
-          <svg class="plane" width="18" height="18">
+          <svg class="form-icon" width="18" height="18">
             <use href="./images/symbol-defs.svg#close"></use>
           </svg>
         </button>
